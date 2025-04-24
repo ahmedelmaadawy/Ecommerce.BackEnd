@@ -1,5 +1,6 @@
 ﻿using Ecommerce.Core.Entities.Product;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace Ecommerce.Infrastructure.Data
 {
@@ -15,6 +16,7 @@ namespace Ecommerce.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
 }
