@@ -2,7 +2,7 @@
 
 namespace Ecommerce.Core.Interfaces
 {
-    public interface IGenericrepository<T> where T : class
+    public interface IGenericRepository<T> where T : class
     {
         Task<IReadOnlyList<T>> GetAllAsync(int id);
         Task<IReadOnlyList<T>> GetAllAsync(params Expression<Func<T, object>>[] includes);

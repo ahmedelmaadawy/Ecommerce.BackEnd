@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Ecommerce.Infrastructure.Repositories
 {
-    public class GenericRepository<T> : IGenericrepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly AppDbContext _context;
         public GenericRepository(AppDbContext context)
