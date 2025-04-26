@@ -19,7 +19,15 @@ namespace Ecommerce.Infrastructure.Data.config
                     Description = "Test",
                     Price = 12,
                     CategoryId = 1
-                }
+                },
+                 new Product
+                 {
+                     Id = 2,
+                     Name = "Test2",
+                     Description = "Test2",
+                     Price = 12,
+                     CategoryId = 2
+                 }
                 );
         }
     }
